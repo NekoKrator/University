@@ -82,8 +82,8 @@ namespace lab2
             int paragraphCount = text.Split(new string[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries).Length;
             int emptyLineCount = text.Split(new string[] { "\n" }, StringSplitOptions.None).Count(line => String.IsNullOrWhiteSpace(line));
             int authorPageCount = charCount / 1800;
-            int vowelCount = text.Count(c => "aeiouAEIOU‡Â≥øÓÛˇ∫˛ø¿≈≤ØŒ”ﬂ™ﬁØ".Contains(c));
-            int consonantCount = text.Count(c => "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ·‚„‰ÊÁÈÍÎÏÌÔÒÚÙıˆ˜¯˘¡¬√ƒ∆«… ÀÃÕœ–—“‘’÷◊ÿŸ".Contains(c));
+            int vowelCount = text.Count(c => "aeiouAEIOU–∞–µ—ñ—ó–æ—É—è—î—é—ó–ê–ï–Ü–á–û–£–Ø–Ñ–Æ–á".Contains(c));
+            int consonantCount = text.Count(c => "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ–±–≤–≥–¥–∂–∑–π–∫–ª–º–Ω–ø—Ä—Å—Ç—Ñ—Ö—Ü—á—à—â–ë–í–ì–î–ñ–ó–ô–ö–õ–ú–ù–ü–†–°–¢–§–•–¶–ß–®–©".Contains(c));
             int digitCount = text.Count(c => char.IsDigit(c));
             int specialCharCount = text.Count(c => !char.IsLetterOrDigit(c) && !char.IsWhiteSpace(c));
             int punctuationCount = text.Count(c => char.IsPunctuation(c));
@@ -91,17 +91,17 @@ namespace lab2
             int latinCount = text.Count(c => ('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));
 
             toolStripStatusLabel1.Text = $"{sizeInBytes / 1024.0} KB";
-            toolStripStatusLabel2.Text = $"{charCount} ÒËÏ‚ÓÎ≥‚";
-            toolStripStatusLabel3.Text = $"{paragraphCount} ‡·Á‡ˆ≥‚";
-            toolStripStatusLabel4.Text = $"{emptyLineCount} ÔÓÓÊÌ≥ı ˇ‰Í≥‚";
-            toolStripStatusLabel5.Text = $"{authorPageCount} ‡‚ÚÓÒ¸ÍËı ÒÚÓ≥ÌÓÍ";
-            toolStripStatusLabel6.Text = $"{vowelCount} „ÓÎÓÒÌËı";
-            toolStripStatusLabel7.Text = $"{consonantCount} ÔË„ÓÎÓÒÌËı";
-            toolStripStatusLabel8.Text = $"{digitCount} ˆËÙ";
-            toolStripStatusLabel9.Text = $"{specialCharCount} ÒÔÂˆ. ÒËÏ‚ÓÎ≥‚";
-            toolStripStatusLabel10.Text = $"{punctuationCount} ÔÛÌÍÚ. ÒËÏ‚ÓÎ≥‚";
-            toolStripStatusLabel11.Text = $"{cyrillicCount} ÍËËÎË˜ÌËı";
-            toolStripStatusLabel12.Text = $"{latinCount} Î‡ÚËÌÒ¸ÍËı";
+            toolStripStatusLabel2.Text = $"{charCount} —Å–∏–º–≤–æ–ª—ñ–≤";
+            toolStripStatusLabel3.Text = $"{paragraphCount} –∞–±–∑–∞—Ü—ñ–≤";
+            toolStripStatusLabel4.Text = $"{emptyLineCount} –ø–æ—Ä–æ–∂–Ω—ñ—Ö —Ä—è–¥–∫—ñ–≤";
+            toolStripStatusLabel5.Text = $"{authorPageCount} –∞–≤—Ç–æ—Ä—Å—å–∫–∏—Ö —Å—Ç–æ—Ä—ñ–Ω–æ–∫";
+            toolStripStatusLabel6.Text = $"{vowelCount} –≥–æ–ª–æ—Å–Ω–∏—Ö";
+            toolStripStatusLabel7.Text = $"{consonantCount} –ø—Ä–∏–≥–æ–ª–æ—Å–Ω–∏—Ö";
+            toolStripStatusLabel8.Text = $"{digitCount} —Ü–∏—Ñ—Ä";
+            toolStripStatusLabel9.Text = $"{specialCharCount} —Å–ø–µ—Ü. —Å–∏–º–≤–æ–ª—ñ–≤";
+            toolStripStatusLabel10.Text = $"{punctuationCount} –ø—É–Ω–∫—Ç. —Å–∏–º–≤–æ–ª—ñ–≤";
+            toolStripStatusLabel11.Text = $"{cyrillicCount} –∫–∏—Ä–∏–ª–∏—á–Ω–∏—Ö";
+            toolStripStatusLabel12.Text = $"{latinCount} –ª–∞—Ç–∏–Ω—Å—å–∫–∏—Ö";
         }
 
         private void refactorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace lab2
 
             richTextBox2.Text = refactoredText;
 
-            DialogResult dialogResult = MessageBox.Show("◊Ë ·‡Ê‡∫ÚÂ ‚Ë Á·ÂÂ„ÚË ÁÏ≥ÌË?", "œ≥‰Ú‚Â‰ÊÂÌÌˇ", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("–ß–∏ –±–∞–∂–∞—î—Ç–µ –≤–∏ –∑–±–µ—Ä–µ–≥—Ç–∏ –∑–º—ñ–Ω–∏?", "–ü—ñ–¥—Ç–≤–µ—Ä–¥–∂–µ–Ω–Ω—è", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 richTextBox1.Text = refactoredText;
@@ -123,21 +123,21 @@ namespace lab2
             }
         }
 
-        private void ÍÎ˛˜Ó‚≥—ÎÓ‚‡CToolStripMenuItem_Click(object sender, EventArgs e)
+        private void –∫–ª—é—á–æ–≤—ñ–°–ª–æ–≤–∞CToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var words = richTextBox1.Text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             var keywordCount = words.Count(word => keywords.Contains(word));
 
-            MessageBox.Show($" ≥Î¸Í≥ÒÚ¸ ÍÎ˛˜Ó‚Ëı ÒÎ≥‚: {keywordCount}");
+            MessageBox.Show($"–ö—ñ–ª—å–∫—ñ—Å—Ç—å –∫–ª—é—á–æ–≤–∏—Ö —Å–ª—ñ–≤: {keywordCount}");
         }
 
-        private void Ì‡È‰Ó‚¯≥—ÎÓ‚‡ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void –Ω–∞–π–¥–æ–≤—à—ñ–°–ª–æ–≤–∞ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var words = richTextBox1.Text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             var longestWords = words.OrderByDescending(word => word.Length).Take(10);
 
             string result = string.Join(", ", longestWords);
-            MessageBox.Show($"10 Ì‡È‰Ó‚¯Ëı ÒÎ≥‚: {result}");
+            MessageBox.Show($"10 –Ω–∞–π–¥–æ–≤—à–∏—Ö —Å–ª—ñ–≤: {result}");
         }
 
         public void UpdateAmountOfNews(int amount)
@@ -156,14 +156,17 @@ namespace lab2
         private async Task DownloadNews(int amountOfNews)
         {
             var newsItems = new List<Tuple<string, string>>();
-            HttpClient client = new HttpClient();
 
             for (int i = 0; i < amountOfNews; i += 10)
             {
-                if (newsItems.Count >= amountOfNews) break;
-
                 string url = $"https://www.znu.edu.ua/cms/index.php?action=news/view&start={i}&site_id=27&lang=ukr";
-                string pageContent = await client.GetStringAsync(url);
+                WebRequest request = WebRequest.Create(url);
+                WebResponse response = await request.GetResponseAsync();
+                string pageContent;
+                using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                {
+                    pageContent = await reader.ReadToEndAsync();
+                }
 
                 Regex newsRegex = new Regex("<div class=\"znu-2016-new\">.*?<div class=\"row\">.*?<div class=\"a-container\">.*?<h4>.*?<a.*?>(.*?)</a>", RegexOptions.Singleline);
                 Regex textRegex = new Regex("<div class=\"znu-2016-new\">.*?<div class=\"row\">.*?<div class=\"a-container\">.*?<div class=\"text\">(.*?)</div>", RegexOptions.Singleline);
@@ -178,8 +181,8 @@ namespace lab2
                     if (j < textMatches.Count)
                     {
                         string text = textMatches[j].Groups[1].Value;
-                        text = Regex.Replace(text, "<.*?>", String.Empty); // Remove HTML tags
-                        text = Regex.Replace(text, "&\\w+;", String.Empty); // Remove words that start with &
+                        text = Regex.Replace(text, "<.*?>", String.Empty);
+                        text = Regex.Replace(text, "&\\w+;", String.Empty);
                         newsItems.Add(new Tuple<string, string>(title, text));
                     }
                 }
@@ -194,6 +197,5 @@ namespace lab2
                 richTextBox1.AppendText($"{newsItems[i].Item2}\n\n");
             }
         }
-
     }
 }
