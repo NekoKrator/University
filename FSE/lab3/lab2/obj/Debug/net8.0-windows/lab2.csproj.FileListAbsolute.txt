@@ -1,0 +1,17 @@
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.Form1.resources
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.csproj.GenerateResource.cache
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.AssemblyInfoInputs.cache
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.AssemblyInfo.cs
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.csproj.CoreCompileInputs.cache
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\bin\Debug\net8.0-windows\lab2.exe
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\bin\Debug\net8.0-windows\lab2.deps.json
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\bin\Debug\net8.0-windows\lab2.runtimeconfig.json
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\bin\Debug\net8.0-windows\lab2.dll
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\bin\Debug\net8.0-windows\lab2.pdb
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.dll
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\refint\lab2.dll
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.pdb
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.genruntimeconfig.cache
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\ref\lab2.dll
+D:\ZNU\Основи Програмної Інженерії\lab2\lab2\lab2\obj\Debug\net8.0-windows\lab2.Form2.resources
